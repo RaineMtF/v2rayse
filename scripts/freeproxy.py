@@ -1,6 +1,7 @@
 import os
-import urllib.parse
 from seleniumbase import Driver
+from bs4 import BeautifulSoup
+import re
 
 def download_freeproxy(config_map, base_dir):
     name = list(config_map.keys())[0]
