@@ -1,0 +1,51 @@
+endpoint: api.wcc.best
+
+config: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_AdblockPlus.ini
+
+url:
+  - https://cdn.jsdelivr.net/gh/free18/v2ray/c.yaml
+  - https://cdn.jsdelivr.net/gh/peasoft/NoMoreWalls/list.yml
+  - https://github.com/chengaopan/AutoMergePublicNodes/raw/refs/heads/master/list.yml
+  - https://github.com/peasoft/NoMoreWalls/raw/refs/heads/master/list.yml
+  - https://chromego-sub.netlify.app/sub/merged_proxies_new.yaml
+  - https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml
+  - https://raw.githubusercontent.com/mfuu/v2ray/master/clash.yaml
+  - https://github.com/barry-far/V2ray-Config/raw/refs/heads/main/All_Configs_base64_Sub.txt
+  - https://raw.githubusercontent.com/wenxig/free-nodes-sub/refs/heads/main/data/clash.yml
+#   - https://cdn.jsdelivr.net/gh/xiaoji235/airport-free/clash/clashnodecc.txt
+#   - https://cdn.jsdelivr.net/gh/xiaoji235/airport-free/clash/naidounode.txt
+#   - https://cdn.jsdelivr.net/gh/xiaoji235/airport-free/clash/v2rayshare.txt
+
+extra:
+  insert: true
+  append_type: true
+  emoji: true
+  list: false # 设为 true 返回纯列表，false 返回完整订阅
+  tfo: false
+  scv: true
+  fdn: false
+  expand: true
+  sort: true
+  udp: false
+
+# Example: https://api.wcc.best/sub?target=clash&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Ffree18%2Fv2ray%2Fc.yaml%7Chttps%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fpeasoft%2FNoMoreWalls%2Flist.yml%7Chttps%3A%2F%2Fgithub.com%2Fchengaopan%2FAutoMergePublicNodes%2Fraw%2Frefs%2Fheads%2Fmaster%2Flist.yml%7Chttps%3A%2F%2Fgithub.com%2Fpeasoft%2FNoMoreWalls%2Fraw%2Frefs%2Fheads%2Fmaster%2Flist.yml%7Chttps%3A%2F%2Fchromego-sub.netlify.app%2Fsub%2Fmerged_proxies_new.yaml%7Chttps%3A%2F%2Fraw.githubusercontent.com%2Fmahdibland%2FShadowsocksAggregator%2Fmaster%2FEternity.yml%7Chttps%3A%2F%2Fraw.githubusercontent.com%2Fmfuu%2Fv2ray%2Fmaster%2Fclash.yaml%7Chttps%3A%2F%2Fgithub.com%2Fbarry-far%2FV2ray-Config%2Fraw%2Frefs%2Fheads%2Fmain%2FAll_Configs_base64_Sub.txt&insert=true&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini_AdblockPlus.ini&append_type=true&emoji=true&list=false&tfo=false&scv=false&fdn=false&expand=true&sort=true&udp=true&surge.doh=true&clash.doh=true&new_name=true
+
+target_list:
+  - Clash:
+      target: clash
+      file: clash.yml
+  - ClashR:
+      target: clashr
+      file: clash.yml
+  - v2ray:
+      target: v2ray
+      file: v2ray.txt
+  - Trojan:
+      target: trojan
+      file: trojan.txt
+  - ss:
+      target: ss
+      file: ss.txt
+  - ssr:
+      target: ssr
+      file: ssr.txt
