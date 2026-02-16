@@ -71,6 +71,6 @@ merge_list:
     - freeprox_cn_4.txt
     - freeprox_cn_5.txt
     - freeprox_cn_more.txt
-  - freeproxy_socks:
+  - freeproxy_socks.txt:
     - freeprox_socks4.txt
     - freeprox_socks5.txt
