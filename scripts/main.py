@@ -17,14 +17,15 @@ def download_url_to_file(url, filename):
     
     try:
         print(f"[Sub] 正在访问: {url}")
-        driver.get(url)
+        # driver.get(url)
+        driver.uc_open_with_reconnect(url, reconnect_time=5)
         
         # 显式等待：防止页面内容还没加载完就保存
         # 这里默认等待 5 秒，或者你可以根据需要等待某个特定元素
-        driver.sleep(5) 
-        
+        # driver.sleep(5) 
+        driver.uc_gui_handle_captcha()
         # 获取渲染后的页面源码
-        page_source = driver.get_page_source()
+        page_source = driver.page_source
         
         with open(filename, "w", encoding="utf-8") as f:
             f.write(page_source)

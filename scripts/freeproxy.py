@@ -30,7 +30,7 @@ def download_freeproxy(config_map, base_dir):
             driver.uc_open_with_reconnect(target_url, reconnect_time=5)
             
             # 如果遇到验证，可以尝试这个命令（但在 headless 下效果有限）
-            # driver.uc_gui_handle_captcha() 
+            driver.uc_gui_handle_captcha() 
 
             # 获取渲染后的源码
             html_content = driver.page_source
