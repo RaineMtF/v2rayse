@@ -45,8 +45,9 @@ freeproxy_list:
   - CN_MORE:
       type: socks5
       country: CN
-      max: 10 # 最多十页
+      speed: 2000
       file: freeprox_cn_more.txt
+      max: 20
   - CN5_ONLY:
       type: socks5
       country: CN
@@ -69,6 +70,7 @@ merge_list:
   - freeprox_cn.txt:
     - freeprox_cn_4.txt
     - freeprox_cn_5.txt
+    - freeprox_cn_more.txt
   - freeproxy_socks:
     - freeprox_socks4.txt
     - freeprox_socks5.txt

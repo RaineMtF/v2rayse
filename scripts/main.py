@@ -3,6 +3,7 @@ import requests
 import os
 import urllib.parse
 import time
+import shutil
 
 from freeproxy import download_freeproxy
 
@@ -110,6 +111,14 @@ def merge_files(merge_list, base_dir):
 
 def main():
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    
+    # Clean output directory
+    configs_dir = os.path.join(base_dir, 'configs')
+    if os.path.exists(configs_dir):
+        print(f"[Main] Cleaning output directory: {configs_dir}")
+        shutil.rmtree(configs_dir)
+    os.makedirs(configs_dir, exist_ok=True)
+
     config = load_config(os.path.join(base_dir, 'config.yml'))
     endpoint = config.get('endpoint', 'api.wcc.best').strip()
     url_list = [u.strip() for u in config.get('url', []) if u.strip()]
