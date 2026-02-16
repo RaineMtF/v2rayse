@@ -87,21 +87,24 @@ def merge_files(merge_list, base_dir):
             target_path = os.path.join(configs_dir, target_file)
             print(f"[Merge] Merging {source_files} into {target_file}")
             
-            merged_content = []
+            unique_lines = []
+            seen = set()
             for src in source_files:
                 src_path = os.path.join(configs_dir, src)
                 if os.path.exists(src_path):
                     with open(src_path, 'r', encoding='utf-8') as f:
-                        content = f.read().strip()
-                        if content:
-                            merged_content.append(content)
+                        for line in f:
+                            clean_line = line.strip()
+                            if clean_line and clean_line not in seen:
+                                unique_lines.append(clean_line)
+                                seen.add(clean_line)
                 else:
                     print(f"[Merge] Warning: Source file {src} not found.")
             
-            if merged_content:
+            if unique_lines:
                 with open(target_path, 'w', encoding='utf-8') as f:
-                    f.write('\n'.join(merged_content) + '\n')
-                print(f"[Merge] Successfully created {target_file}")
+                    f.write('\n'.join(unique_lines) + '\n')
+                print(f"[Merge] Successfully created {target_file} (Total: {len(unique_lines)} unique lines)")
             else:
                 print(f"[Merge] Skip {target_file}: No content found in source files.")
 

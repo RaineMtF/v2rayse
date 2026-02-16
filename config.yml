@@ -40,20 +40,17 @@ target_list:
   - v2ray:
       target: v2ray
       file: v2ray.txt
-  - Trojan:
-      target: trojan
-      file: trojan.txt
-  - ss:
-      target: ss
-      file: ss.txt
-  - ssr:
-      target: ssr
-      file: ssr.txt
 
 freeproxy_list:
+  - CN_MORE:
+      type: socks5
+      country: CN
+      max: 10 # 最多十页
+      file: freeprox_cn_more.txt
   - CN5_ONLY:
       type: socks5
       country: CN
+      speed: 1500
       file: freeprox_cn_5.txt
   - CN4_ONLY:
       type: socks4
@@ -61,17 +58,17 @@ freeproxy_list:
       file: freeprox_cn_4.txt
   - SOCKS4_ONLY:
       type: socks4
-      speed: 3000
+      speed: 1500
       file: freeprox_socks4.txt
   - SOCKS5_ONLY:
       type: socks5
-      speed: 3000
+      speed: 1500
       file: freeprox_socks5.txt
-  - BEST_ONLY:
-      speed: 750
-      file: freeprox_best.txt
 
 merge_list:
   - freeprox_cn.txt:
     - freeprox_cn_4.txt
     - freeprox_cn_5.txt
+  - freeproxy_socks:
+    - freeprox_socks4.txt
+    - freeprox_socks5.txt

@@ -10,12 +10,14 @@ def download_freeproxy(config_map, base_dir):
     base_url = "https://www.freeproxy.world/"
     all_v2ray_configs = []
 
+    page_max = config.get('max', 50)
+
     # 初始化 SeleniumBase Driver (UC 模式)
     # headless=True 在 GitHub Actions 环境是必须的
     driver = Driver(uc=True, headless=True)
     
     try:
-        for page in range(1, 22):
+        for page in range(1, page_max + 1):
             # 构造参数
             current_params = config.copy()
             current_params['page'] = page

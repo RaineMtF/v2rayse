@@ -14,8 +14,6 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 5 # Forced termination after 5 minutes
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v6
