@@ -46,31 +46,31 @@ freeproxy_list:
       type: socks5
       country: CN
       speed: 2000
-      file: freeprox_cn_more.txt
+      file: freeproxy_cn_more.txt
       max: 20
   - CN5_ONLY:
       type: socks5
       country: CN
       speed: 1500
-      file: freeprox_cn_5.txt
+      file: freeproxy_cn_5.txt
   - CN4_ONLY:
       type: socks4
       country: CN
-      file: freeprox_cn_4.txt
+      file: freeproxy_cn_4.txt
   - SOCKS4_ONLY:
       type: socks4
       speed: 1500
-      file: freeprox_socks4.txt
+      file: freeproxy_socks4.txt
   - SOCKS5_ONLY:
       type: socks5
       speed: 1500
-      file: freeprox_socks5.txt
+      file: freeproxy_socks5.txt
 
 merge_list:
-  - freeprox_cn.txt:
-    - freeprox_cn_4.txt
-    - freeprox_cn_5.txt
-    - freeprox_cn_more.txt
+  - freeproxy_cn.txt:
+    - freeproxy_cn_4.txt
+    - freeproxy_cn_5.txt
+    - freeproxy_cn_more.txt
   - freeproxy_socks.txt:
-    - freeprox_socks4.txt
-    - freeprox_socks5.txt
+    - freeproxy_socks4.txt
+    - freeproxy_socks5.txt

@@ -14,7 +14,7 @@ def download_freeproxy(config_map, base_dir):
 
     # 初始化 SeleniumBase Driver (UC 模式)
     # headless=True 在 GitHub Actions 环境是必须的
-    driver = Driver(uc=True, headless=True)
+    driver = Driver(uc=True)
     
     try:
         for page in range(1, page_max + 1):

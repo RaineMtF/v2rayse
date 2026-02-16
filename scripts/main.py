@@ -13,7 +13,7 @@ from seleniumbase import Driver
 def download_url_to_file(url, filename):
     # uc=True: 开启反爬虫探测绕过模式
     # headless=True: 在 GitHub Actions 等无界面环境运行必须开启
-    driver = Driver(uc=True, headless=True)
+    driver = Driver(uc=True)
     
     try:
         print(f"[Sub] 正在访问: {url}")
