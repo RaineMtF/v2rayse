@@ -96,7 +96,7 @@ def download_freeproxy(config_map, base_dir):
     file_name = config.get('file', f"{name}.txt")
     file_path = os.path.join(output_dir, file_name)
         
-    with open(filename, "w", encoding="utf-8") as f:
+    with open(file_path, "w", encoding="utf-8") as f:
         f.write('\n'.join(all_v2ray_configs))
     
     print(f"[Freeproxy] Downloaded {name} to {file_path}")
