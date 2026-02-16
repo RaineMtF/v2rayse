@@ -92,8 +92,6 @@ def download_freeproxy(config_map, base_dir):
     output_dir = os.path.join(base_dir, 'configs')
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
-        
-    name = config['name']
 
     file_name = config.get('file', f"{name}.txt")
     file_path = os.path.join(output_dir, file_name)
