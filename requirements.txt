@@ -1,3 +1,4 @@
 seleniumbase
 pyyaml
 requests
+beautifulsoup4

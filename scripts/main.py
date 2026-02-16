@@ -5,6 +5,7 @@ import urllib.parse
 import time
 
 from scraper import download_url_to_file
+from freeproxy import download_freeproxy
 
 def load_config(config_path):
     with open(config_path, 'r', encoding='utf-8') as f:
@@ -29,7 +30,19 @@ def download_config(endpoint, target_info, url_list, config_url, extra_params, b
         else:
             api_url += f"&{key}={value}"
             
-    download_url_to_file(api_url, target_name)
+    output_dir = os.path.join(base_dir, 'configs')
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
+    if target in ['clash', 'clashr']:
+        file_name_final = f"{target_name}.yml"
+    else:
+        file_name_final = file_name
+        
+    file_path = os.path.join(output_dir, file_name_final)
+    
+    print(f"[Sub] Downloading {target_name} to {file_path}")
+    download_url_to_file(api_url, file_path)
         
     # headers = {
     #     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
@@ -70,7 +83,11 @@ def main():
     
     for target_info in target_list:
         download_config(endpoint, target_info, url_list, config_url, extra_params, base_dir)
-        # Avoid hitting API too hard
+        time.sleep(1)
+
+    freeproxy_list = config.get('freeproxy_list', [])
+    for fp_config in freeproxy_list:
+        download_freeproxy(fp_config, base_dir)
         time.sleep(1)
 
 if __name__ == "__main__":

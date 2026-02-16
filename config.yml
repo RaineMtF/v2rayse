@@ -49,3 +49,19 @@ target_list:
   - ssr:
       target: ssr
       file: ssr.txt
+
+freeproxy_list:
+  - CN_ONLY:
+      country: CN
+      file: freeprox_cn.txt
+  - SOCKS4_ONLY:
+      type: socks4
+      speed: 3000
+      file: freeprox_socks4.txt
+  - SOCKS5_ONLY:
+      type: socks5
+      speed: 3000
+      file: freeprox_socks5.txt
+  - BEST_ONLY:
+      speed: 750
+      file: freeprox_best.txt
