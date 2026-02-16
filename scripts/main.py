@@ -4,6 +4,8 @@ import os
 import urllib.parse
 import time
 
+from scraper import download_url_to_file
+
 def load_config(config_path):
     with open(config_path, 'r', encoding='utf-8') as f:
         return yaml.safe_load(f)
@@ -27,33 +29,35 @@ def download_config(endpoint, target_info, url_list, config_url, extra_params, b
         else:
             api_url += f"&{key}={value}"
             
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-    }
-    
-    print(f"Downloading {target_name} from {api_url}")
-    
-    try:
-        response = requests.get(api_url, headers=headers, timeout=60)
-        response.raise_for_status()
+    download_url_to_file(api_url, target_name)
         
-        output_dir = os.path.join(base_dir, 'configs')
-        if not os.path.exists(output_dir):
-            os.makedirs(output_dir)
-            
-        if target in ['clash', 'clashr']:
-            file_name_final = f"{target_name}.yml"
-        else:
-            file_name_final = file_name
-            
-        file_path = os.path.join(output_dir, file_name_final)
-            
-        with open(file_path, 'w', encoding='utf-8') as f:
-            f.write(response.text)
-        print(f"Successfully saved {target_name} to {file_path}")
+    # headers = {
+    #     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    # }
+    
+    # print(f"Downloading {target_name} from {api_url}")
+    
+    # try:
+    #     response = requests.get(api_url, headers=headers, timeout=60)
+    #     response.raise_for_status()
         
-    except Exception as e:
-        print(f"Error downloading {target_name}: {e}")
+    #     output_dir = os.path.join(base_dir, 'configs')
+    #     if not os.path.exists(output_dir):
+    #         os.makedirs(output_dir)
+            
+    #     if target in ['clash', 'clashr']:
+    #         file_name_final = f"{target_name}.yml"
+    #     else:
+    #         file_name_final = file_name
+            
+    #     file_path = os.path.join(output_dir, file_name_final)
+            
+    #     with open(file_path, 'w', encoding='utf-8') as f:
+    #         f.write(response.text)
+    #     print(f"Successfully saved {target_name} to {file_path}")
+        
+    # except Exception as e:
+    #     print(f"Error downloading {target_name}: {e}")
 
 def main():
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
