@@ -13,4 +13,3 @@ socks://Og@218.90.167.205:1080#CN,%20Wuxi
 socks://Og@218.91.230.253:1080#CN,%20Nantong
 socks://Og@60.217.64.237:35292#CN,%20Jinan
 socks://Og@222.212.85.149:5678#CN,%20Chengdu
-socks://Og@27.115.33.94:4153#CN,%20Shanghai
