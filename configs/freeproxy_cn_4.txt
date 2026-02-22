@@ -1,3 +1,5 @@
+socks://Og@112.2.21.18:51080#CN,%20Beijing
+socks://Og@218.26.101.226:53813#CN,%20Taiyuan
 socks://Og@124.220.20.17:13019#CN,%20Beijing
 socks://Og@221.224.140.140:51080#CN,%20Danyang
 socks://Og@39.129.129.165:10800#CN,%20Kunming
