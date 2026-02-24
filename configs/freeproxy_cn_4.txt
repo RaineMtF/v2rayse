@@ -1,3 +1,4 @@
+socks://Og@182.47.7.5:7891#CN,%20Yantai
 socks://Og@106.13.58.110:8888#CN,%20Beijing
 socks://Og@221.224.140.140:51080#CN,%20Danyang
 socks://Og@58.218.169.186:10800#CN,%20Nanjing
