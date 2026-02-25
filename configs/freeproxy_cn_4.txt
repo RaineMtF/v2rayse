@@ -20,5 +20,3 @@ socks://Og@221.224.140.140:51080#CN,%20Danyang
 socks://Og@171.221.176.137:10800#CN,%20Chengdu
 socks://Og@122.96.62.178:1080#CN,%20Nanjing
 socks://Og@220.170.182.39:9293#CN,%20Zhuzhou
-socks://Og@106.52.230.117:8080#CN,%20Guangzhou
-socks://Og@221.216.205.22:4145#CN,%20Beijing
