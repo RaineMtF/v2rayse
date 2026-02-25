@@ -1,3 +1,4 @@
+socks://Og@60.217.64.237:35292#CN,%20Jinan
 socks://Og@114.214.162.73:26001#CN,%20Nanjing
 socks://Og@210.77.18.31:7890#CN,%20Beijing
 socks://Og@210.22.100.242:1080#CN,%20Shanghai
@@ -124,7 +125,6 @@ socks://Og@123.54.197.17:20340#CN,%20Zhumadian
 socks://Og@203.25.208.163:1111#CN,%20Guangzhou
 socks://Og@123.54.197.19:23053#CN,%20Zhumadian
 socks://Og@123.54.197.18:20896#CN,%20Zhumadian
-socks://Og@203.25.208.163:1145#CN,%20Guangzhou
 socks://Og@123.54.197.17:23593#CN,%20Zhumadian
 socks://Og@123.54.197.50:20669#CN,%20Zhumadian
 socks://Og@123.54.197.16:23342#CN,%20Zhumadian
@@ -139,7 +139,6 @@ socks://Og@123.54.197.17:23140#CN,%20Zhumadian
 socks://Og@123.54.197.17:21509#CN,%20Zhumadian
 socks://Og@123.54.197.17:23929#CN,%20Zhumadian
 socks://Og@123.54.197.21:20196#CN,%20Zhumadian
-socks://Og@103.215.36.88:11929#CN,%20Yancheng
 socks://Og@123.54.197.50:21633#CN,%20Zhumadian
 socks://Og@123.54.197.17:23158#CN,%20Zhumadian
 socks://Og@123.54.197.18:21977#CN,%20Zhumadian
@@ -160,7 +159,7 @@ socks://Og@123.54.197.16:21191#CN,%20Zhumadian
 socks://Og@123.54.197.50:23745#CN,%20Zhumadian
 socks://Og@123.54.197.17:21198#CN,%20Zhumadian
 socks://Og@123.54.197.21:23366#CN,%20Zhumadian
-socks://Og@123.54.197.50:23639#CN,%20Zhumadian
+socks://Og@221.224.56.210:10004#CN,%20Zhangjiagang
 socks://Og@203.25.208.163:1100#CN,%20Guangzhou
 socks://Og@123.54.197.17:20740#CN,%20Zhumadian
 socks://Og@123.54.197.18:23763#CN,%20Zhumadian
@@ -430,11 +429,3 @@ socks://Og@123.54.197.21:21141#CN,%20Zhumadian
 socks://Og@123.54.197.17:23249#CN,%20Zhumadian
 socks://Og@123.54.197.17:23532#CN,%20Zhumadian
 socks://Og@123.54.197.18:23330#CN,%20Zhumadian
-socks://Og@123.54.197.18:20912#CN,%20Zhumadian
-socks://Og@123.54.197.17:21778#CN,%20Zhumadian
-socks://Og@123.54.197.20:21449#CN,%20Zhumadian
-socks://Og@103.215.36.88:15088#CN,%20Yancheng
-socks://Og@123.54.197.50:20535#CN,%20Zhumadian
-socks://Og@123.54.197.21:23498#CN,%20Zhumadian
-socks://Og@123.54.197.18:23451#CN,%20Zhumadian
-socks://Og@123.54.197.18:20464#CN,%20Zhumadian
