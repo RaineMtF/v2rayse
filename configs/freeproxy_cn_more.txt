@@ -11,4 +11,3 @@ socks://Og@36.111.191.127:1080#CN,%20Hangzhou
 socks://Og@221.224.56.210:10006#CN,%20Zhangjiagang
 socks://Og@221.224.56.210:10011#CN,%20Zhangjiagang
 socks://Og@103.215.36.88:17224#CN,%20Yancheng
-socks://Og@221.224.56.210:10013#CN,%20Zhangjiagang
