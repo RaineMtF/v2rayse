@@ -1,10 +1,9 @@
+socks://Og@59.46.216.131:30001#CN,%20Dalian
+socks://Og@203.25.208.163:1111#CN,%20Guangzhou
 socks://Og@203.25.208.163:1100#CN,%20Guangzhou
 socks://Og@36.111.191.127:1080#CN,%20Hangzhou
 socks://Og@221.224.56.210:10018#CN,%20Zhangjiagang
-socks://Og@59.46.216.131:30001#CN,%20Dalian
-socks://Og@221.224.56.210:10009#CN,%20Zhangjiagang
 socks://Og@221.224.56.210:10006#CN,%20Zhangjiagang
-socks://Og@203.25.208.163:1111#CN,%20Guangzhou
 socks://Og@203.25.208.163:1145#CN,%20Guangzhou
 socks://Og@221.224.56.210:10012#CN,%20Zhangjiagang
 socks://Og@221.224.56.210:10011#CN,%20Zhangjiagang
