@@ -1,5 +1,5 @@
+socks://Og@58.19.55.17:15100#CN,%20Wuhan
 socks://Og@221.224.56.210:10013#CN,%20Zhangjiagang
-socks://Og@203.25.208.163:1111#CN,%20Guangzhou
 socks://Og@124.16.101.80:7890#CN,%20Beijing
 socks://Og@203.25.208.163:1011#CN,%20Guangzhou
 socks://Og@39.187.67.198:1080#CN,%20Ningbo
