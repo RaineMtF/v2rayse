@@ -1,3 +1,5 @@
+socks://Og@60.217.64.237:35292#CN,%20Jinan
+socks://Og@27.115.33.94:4153#CN,%20Shanghai
 socks://Og@221.225.48.100:8989#CN,%20Suzhou
 socks://Og@218.83.201.226:10800#CN,%20Shanghai
 socks://Og@171.221.174.186:10800#CN,%20Chengdu
@@ -18,9 +20,9 @@ socks://Og@222.28.182.229:7890#CN,%20Beijing
 socks://Og@203.25.208.163:1011#CN,%20Guangzhou
 socks://Og@59.46.216.131:30001#CN,%20Dalian
 socks://Og@203.25.208.163:1100#CN,%20Guangzhou
-socks://Og@58.19.55.17:15100#CN,%20Wuhan
 socks://Og@203.25.208.163:1145#CN,%20Guangzhou
 socks://Og@116.236.146.234:4145#CN,%20Shanghai
+socks://Og@203.25.208.163:1111#CN,%20Guangzhou
 socks://Og@124.16.101.80:7890#CN,%20Beijing
 socks://Og@39.187.67.198:1080#CN,%20Ningbo
 socks://Og@182.47.7.5:7891#CN,%20Yantai
