@@ -1,4 +1,4 @@
-socks://Og@203.25.208.163:1145#CN,%20Guangzhou
+socks://Og@203.25.208.163:1100#CN,%20Guangzhou
 socks://Og@103.215.36.88:15968#CN,%20Yancheng
 socks://Og@58.19.55.17:15100#CN,%20Wuhan
 socks://Og@124.16.101.80:7890#CN,%20Beijing
