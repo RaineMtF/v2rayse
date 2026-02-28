@@ -1,3 +1,5 @@
+socks://Og@43.139.118.27:10808#CN,%20Guangzhou
+socks://Og@218.90.167.205:1080#CN,%20Wuxi
 socks://Og@120.132.97.88:7897#CN,%20Beijing
 socks://Og@58.18.39.58:10800#CN,%20Baotou
 socks://Og@171.221.174.186:10800#CN,%20Chengdu
