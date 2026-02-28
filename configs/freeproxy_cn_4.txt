@@ -1,3 +1,5 @@
+socks://Og@120.202.127.234:10808#CN,%20Xiaogan
+socks://Og@39.175.80.225:1080#CN,%20Zhoushan
 socks://Og@183.6.7.103:4145#CN,%20Guangzhou
 socks://Og@27.223.85.74:48293#CN,%20Qingdao
 socks://Og@60.217.64.237:35292#CN,%20Jinan
