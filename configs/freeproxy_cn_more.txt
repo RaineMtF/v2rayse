@@ -7,4 +7,3 @@ socks://Og@58.19.55.17:15348#CN,%20Wuhan
 socks://Og@103.215.36.88:11929#CN,%20Yancheng
 socks://Og@121.237.181.137:8888#CN,%20Nanjing
 socks://Og@103.215.36.88:16650#CN,%20Yancheng
-socks://Og@103.215.36.88:15968#CN,%20Yancheng
