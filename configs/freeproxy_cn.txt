@@ -23,11 +23,12 @@ socks://Og@58.18.39.58:10800#CN,%20Baotou
 socks://Og@171.221.174.186:10800#CN,%20Chengdu
 socks://Og@171.221.176.137:10800#CN,%20Chengdu
 socks://Og@47.92.82.167:3128#CN,%20Beijing
+socks://Og@103.215.36.88:17853#CN,%20Yancheng
+socks://Og@221.224.56.210:10013#CN,%20Zhangjiagang
 socks://Og@203.25.208.163:1145#CN,%20Guangzhou
 socks://Og@103.215.36.88:15852#CN,%20Yancheng
 socks://Og@103.215.36.88:11929#CN,%20Yancheng
 socks://Og@121.237.181.137:8888#CN,%20Nanjing
 socks://Og@103.215.36.88:16650#CN,%20Yancheng
 socks://Og@58.19.55.17:15100#CN,%20Wuhan
-socks://Og@221.224.56.210:10013#CN,%20Zhangjiagang
 socks://Og@58.19.55.17:15348#CN,%20Wuhan
