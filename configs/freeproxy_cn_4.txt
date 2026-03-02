@@ -19,7 +19,6 @@ socks://Og@39.129.129.165:10800#CN,%20Kunming
 socks://Og@39.175.80.225:1080#CN,%20Zhoushan
 socks://Og@42.193.140.221:1080#CN,%20Guangzhou
 socks://Og@222.209.81.12:10800#CN,%20Chengdu
-socks://Og@120.132.97.88:7897#CN,%20Beijing
 socks://Og@210.22.100.242:1080#CN,%20Shanghai
 socks://Og@171.221.176.137:10800#CN,%20Chengdu
 socks://Og@125.70.227.214:10800#CN,%20Chengdu
