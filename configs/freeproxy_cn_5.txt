@@ -1,3 +1,4 @@
+socks://Og@203.25.208.163:1111#CN,%20Guangzhou
 socks://Og@124.220.20.17:13019#CN,%20Beijing
 socks://Og@159.226.72.167:10081#CN,%20Beijing
 socks://Og@116.236.146.234:4145#CN,%20Shanghai
