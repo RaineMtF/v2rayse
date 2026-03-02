@@ -9,4 +9,3 @@ socks://Og@159.226.72.167:10081#CN,%20Beijing
 socks://Og@39.187.67.198:1080#CN,%20Ningbo
 socks://Og@221.202.27.194:10808#CN,%20Dandong
 socks://Og@116.236.146.234:4145#CN,%20Shanghai
-socks://Og@103.215.36.88:17853#CN,%20Yancheng
