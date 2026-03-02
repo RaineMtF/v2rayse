@@ -11,4 +11,3 @@ socks://Og@203.25.208.163:1111#CN,%20Guangzhou
 socks://Og@106.52.230.117:8080#CN,%20Guangzhou
 socks://Og@103.215.36.88:17853#CN,%20Yancheng
 socks://Og@103.215.36.88:15852#CN,%20Yancheng
-socks://Og@103.215.36.88:11929#CN,%20Yancheng
