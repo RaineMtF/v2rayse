@@ -264,4 +264,3 @@ socks://Og@58.19.55.17:15062#CN,%20Wuhan
 socks://Og@203.25.208.163:1111#CN,%20Guangzhou
 socks://Og@58.19.55.17:15314#CN,%20Wuhan
 socks://Og@103.215.36.88:18474#CN,%20Yancheng
-socks://Og@103.215.36.88:17853#CN,%20Yancheng
