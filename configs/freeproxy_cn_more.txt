@@ -1,3 +1,5 @@
+socks://Og@124.221.164.32:7890#CN,%20Beijing
+socks://Og@59.46.216.131:30001#CN,%20Dalian
 socks://Og@124.220.20.17:13019#CN,%20Beijing
 socks://Og@121.237.181.137:8888#CN,%20Nanjing
 socks://Og@203.25.208.163:1145#CN,%20Guangzhou
