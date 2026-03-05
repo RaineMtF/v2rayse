@@ -1,3 +1,4 @@
+socks://Og@134.175.238.113:1080#CN,%20Guangzhou
 socks://Og@124.221.164.32:7890#CN,%20Beijing
 socks://Og@203.25.208.163:1145#CN,%20Guangzhou
 socks://Og@58.19.55.17:15334#CN,%20Wuhan
@@ -198,7 +199,6 @@ socks://Og@58.19.55.17:15359#CN,%20Wuhan
 socks://Og@58.19.55.17:15072#CN,%20Wuhan
 socks://Og@58.19.55.17:15371#CN,%20Wuhan
 socks://Og@58.19.55.17:15107#CN,%20Wuhan
-socks://Og@58.19.55.17:15107#CN,%20Wuhan
 socks://Og@58.19.55.17:15093#CN,%20Wuhan
 socks://Og@58.19.55.17:15027#CN,%20Wuhan
 socks://Og@58.19.55.17:15222#CN,%20Wuhan
@@ -265,5 +265,3 @@ socks://Og@203.25.208.163:1111#CN,%20Guangzhou
 socks://Og@58.19.55.17:15314#CN,%20Wuhan
 socks://Og@103.215.36.88:18474#CN,%20Yancheng
 socks://Og@103.215.36.88:17853#CN,%20Yancheng
-socks://Og@221.224.56.210:10011#CN,%20Zhangjiagang
-socks://Og@103.215.36.88:17184#CN,%20Yancheng
