@@ -1,3 +1,4 @@
+socks://Og@124.221.164.32:7890#CN,%20Beijing
 socks://Og@58.19.55.17:15334#CN,%20Wuhan
 socks://Og@58.19.55.17:15015#CN,%20Wuhan
 socks://Og@58.19.55.17:15275#CN,%20Wuhan
@@ -50,7 +51,6 @@ socks://Og@58.19.55.17:15246#CN,%20Wuhan
 socks://Og@58.19.55.17:15230#CN,%20Wuhan
 socks://Og@58.19.55.17:15036#CN,%20Wuhan
 socks://Og@58.19.55.17:15227#CN,%20Wuhan
-socks://Og@124.221.164.32:7890#CN,%20Beijing
 socks://Og@58.19.55.17:15153#CN,%20Wuhan
 socks://Og@58.19.55.17:15068#CN,%20Wuhan
 socks://Og@58.19.55.17:15318#CN,%20Wuhan
