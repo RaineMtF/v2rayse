@@ -17,5 +17,3 @@ socks://Og@116.233.142.37:1080#CN,%20Shanghai
 socks://Og@39.175.80.225:1080#CN,%20Zhoushan
 socks://Og@61.191.119.134:10800#CN,%20Huaibei
 socks://Og@171.221.174.186:10800#CN,%20Chengdu
-socks://Og@220.167.89.10:10800#CN,%20Chengdu
-socks://Og@221.226.188.218:10800#CN,%20Nanjing
