@@ -1,3 +1,16 @@
+socks://Og@123.54.197.53:22131#CN,%20Zhumadian
+socks://Og@123.54.197.51:23506#CN,%20Zhumadian
+socks://Og@103.215.36.88:16099#CN,%20Yancheng
+socks://Og@123.54.197.50:22211#CN,%20Zhumadian
+socks://Og@123.54.197.51:23487#CN,%20Zhumadian
+socks://Og@123.54.197.51:21170#CN,%20Zhumadian
+socks://Og@123.54.197.49:22527#CN,%20Zhumadian
+socks://Og@123.54.197.53:21379#CN,%20Zhumadian
+socks://Og@103.215.36.88:16009#CN,%20Yancheng
+socks://Og@123.54.197.51:21125#CN,%20Zhumadian
+socks://Og@106.52.230.117:8080#CN,%20Guangzhou
+socks://Og@123.54.197.17:23980#CN,%20Zhumadian
+socks://Og@123.54.197.51:23587#CN,%20Zhumadian
 socks://Og@123.54.197.17:21005#CN,%20Zhumadian
 socks://Og@123.54.197.50:20437#CN,%20Zhumadian
 socks://Og@123.54.197.18:21636#CN,%20Zhumadian
@@ -29,8 +42,6 @@ socks://Og@124.221.164.32:7890#CN,%20Beijing
 socks://Og@123.54.197.50:23058#CN,%20Zhumadian
 socks://Og@123.54.197.50:21864#CN,%20Zhumadian
 socks://Og@123.54.197.53:21479#CN,%20Zhumadian
-socks://Og@123.54.197.51:20488#CN,%20Zhumadian
-socks://Og@123.54.197.50:22980#CN,%20Zhumadian
 socks://Og@123.54.197.25:22128#CN,%20Zhumadian
 socks://Og@123.54.197.17:22925#CN,%20Zhumadian
 socks://Og@123.54.197.25:20167#CN,%20Zhumadian
@@ -45,11 +56,8 @@ socks://Og@123.54.197.53:22930#CN,%20Zhumadian
 socks://Og@123.54.197.53:20503#CN,%20Zhumadian
 socks://Og@123.54.197.21:23397#CN,%20Zhumadian
 socks://Og@123.54.197.17:23570#CN,%20Zhumadian
-socks://Og@123.54.197.50:20764#CN,%20Zhumadian
 socks://Og@123.54.197.49:20391#CN,%20Zhumadian
-socks://Og@123.54.197.51:23587#CN,%20Zhumadian
 socks://Og@123.54.197.51:21172#CN,%20Zhumadian
-socks://Og@123.54.197.24:20101#CN,%20Zhumadian
 socks://Og@123.54.197.24:21062#CN,%20Zhumadian
 socks://Og@123.54.197.24:22978#CN,%20Zhumadian
 socks://Og@123.54.197.18:21018#CN,%20Zhumadian
@@ -61,8 +69,6 @@ socks://Og@103.215.36.88:17133#CN,%20Yancheng
 socks://Og@203.25.208.163:1145#CN,%20Guangzhou
 socks://Og@103.215.36.88:17435#CN,%20Yancheng
 socks://Og@103.215.36.88:17013#CN,%20Yancheng
-socks://Og@106.52.230.117:8080#CN,%20Guangzhou
 socks://Og@103.215.36.88:19160#CN,%20Yancheng
 socks://Og@103.215.36.88:16777#CN,%20Yancheng
 socks://Og@103.215.36.88:17970#CN,%20Yancheng
-socks://Og@121.237.181.137:8888#CN,%20Nanjing
