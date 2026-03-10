@@ -1,3 +1,4 @@
+socks://Og@106.13.46.252:33302#CN,%20Beijing
 socks://Og@117.93.176.37:8989#CN,%20Yancheng
 socks://Og@210.22.100.242:1080#CN,%20Shanghai
 socks://Og@171.217.69.113:10800#CN,%20Chengdu
@@ -29,4 +30,3 @@ socks://Og@117.26.40.70:2829#CN,%20Quanzhou
 socks://Og@218.83.201.226:10800#CN,%20Shanghai
 socks://Og@171.221.174.186:10800#CN,%20Chengdu
 socks://Og@218.90.167.205:1080#CN,%20Wuxi
-socks://Og@183.6.7.103:4145#CN,%20Guangzhou
