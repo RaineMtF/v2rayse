@@ -25,5 +25,3 @@ socks://Og@27.223.85.74:48293#CN,%20Qingdao
 socks://Og@106.13.46.252:33302#CN,%20Beijing
 socks://Og@117.93.176.37:8989#CN,%20Yancheng
 socks://Og@218.26.101.226:53813#CN,%20Taiyuan
-socks://Og@58.18.39.58:10800#CN,%20Baotou
-socks://Og@39.129.129.165:10800#CN,%20Kunming
