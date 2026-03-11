@@ -1,3 +1,13 @@
+socks://Og@123.54.197.52:23240#CN,%20Zhumadian
+socks://Og@123.54.197.19:20115#CN,%20Zhumadian
+socks://Og@123.54.197.51:21641#CN,%20Zhumadian
+socks://Og@123.54.197.53:20553#CN,%20Zhumadian
+socks://Og@123.54.197.49:22831#CN,%20Zhumadian
+socks://Og@123.54.197.19:23763#CN,%20Zhumadian
+socks://Og@221.202.27.194:10807#CN,%20Dandong
+socks://Og@123.54.197.49:23932#CN,%20Zhumadian
+socks://Og@123.54.197.16:22917#CN,%20Zhumadian
+socks://Og@123.54.197.49:21181#CN,%20Zhumadian
 socks://Og@123.54.197.50:20048#CN,%20Zhumadian
 socks://Og@123.54.197.50:20893#CN,%20Zhumadian
 socks://Og@123.54.197.50:23909#CN,%20Zhumadian
@@ -73,7 +83,6 @@ socks://Og@123.54.197.16:21270#CN,%20Zhumadian
 socks://Og@123.54.197.16:20361#CN,%20Zhumadian
 socks://Og@123.54.197.16:20109#CN,%20Zhumadian
 socks://Og@58.19.55.17:15139#CN,%20Wuhan
-socks://Og@123.54.197.53:20299#CN,%20Zhumadian
 socks://Og@123.54.197.19:20239#CN,%20Zhumadian
 socks://Og@58.19.55.17:15025#CN,%20Wuhan
 socks://Og@123.54.197.19:23727#CN,%20Zhumadian
@@ -111,7 +120,6 @@ socks://Og@123.54.197.50:20009#CN,%20Zhumadian
 socks://Og@58.19.55.17:15032#CN,%20Wuhan
 socks://Og@123.54.197.49:21539#CN,%20Zhumadian
 socks://Og@123.54.197.53:20070#CN,%20Zhumadian
-socks://Og@124.221.164.32:7890#CN,%20Beijing
 socks://Og@123.54.197.51:23724#CN,%20Zhumadian
 socks://Og@123.54.197.16:21411#CN,%20Zhumadian
 socks://Og@123.54.197.16:20542#CN,%20Zhumadian
@@ -232,12 +240,3 @@ socks://Og@123.54.197.49:20060#CN,%20Zhumadian
 socks://Og@123.54.197.21:22447#CN,%20Zhumadian
 socks://Og@123.54.197.49:20231#CN,%20Zhumadian
 socks://Og@123.54.197.21:21662#CN,%20Zhumadian
-socks://Og@123.54.197.21:20838#CN,%20Zhumadian
-socks://Og@123.54.197.19:22110#CN,%20Zhumadian
-socks://Og@123.54.197.50:21993#CN,%20Zhumadian
-socks://Og@123.54.197.51:23638#CN,%20Zhumadian
-socks://Og@123.54.197.50:20316#CN,%20Zhumadian
-socks://Og@123.54.197.53:23543#CN,%20Zhumadian
-socks://Og@123.54.197.51:20381#CN,%20Zhumadian
-socks://Og@123.54.197.53:21247#CN,%20Zhumadian
-socks://Og@123.54.197.19:21785#CN,%20Zhumadian
