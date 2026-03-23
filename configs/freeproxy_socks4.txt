@@ -1,3 +1,6 @@
+socks://Og@64.227.76.27:1080#NL,%20Amsterdam
+socks://Og@181.129.74.58:30431#CO,%20Medellin
+socks://Og@131.161.68.38:35944#BR,%20Inhoaiba
 socks://Og@104.168.1.232:10808#US,%20Buffalo
 socks://Og@125.25.57.57:4153#TH,%20Bangkok
 socks://Og@141.105.107.152:5678#ES,%20Palma
@@ -69,10 +72,7 @@ socks://Og@52.233.95.134:1080#US,%20Quincy
 socks://Og@24.144.86.173:1080#US,%20Santa%20Clara
 socks://Og@61.191.119.134:10800#CN,%20Huaibei
 socks://Og@193.108.58.29:1080#CA,%20Vancouver
-socks://Og@84.201.172.86:1080#RU,%20Moscow
 socks://Og@103.37.82.134:39873#IN,%20Delhi
-socks://Og@181.129.74.58:30431#CO,%20Medellin
-socks://Og@193.233.254.57:1080#DE,%20Frankfurt%20am%20Main
 socks://Og@103.118.127.222:4153#ID,%20Jakarta
 socks://Og@173.242.95.158:60606#US,%20Random%20Lake
 socks://Og@3.37.42.232:5050#KR,%20Icheon
@@ -106,7 +106,6 @@ socks://Og@82.132.19.108:4153#HR,%20Zagreb
 socks://Og@36.66.170.25:4153#ID,%20Tegal
 socks://Og@194.67.99.194:1080#RU,%20Moscow
 socks://Og@170.64.182.133:1080#AU,%20Sydney
-socks://Og@161.35.82.57:1080#NL,%20Amsterdam
 socks://Og@27.223.85.74:48293#CN,%20Qingdao
 socks://Og@46.8.60.34:1080#RU,%20Krasnodar
 socks://Og@186.1.182.194:4153#CO,%20Santa%20Marta
@@ -235,16 +234,8 @@ socks://Og@202.179.72.138:51951#IN,%20Mumbai
 socks://Og@97.74.237.222:45219#US,%20Tempe
 socks://Og@23.148.244.127:10072#Unknown,%20-
 socks://Og@203.160.61.104:4145#ID,%20Jakarta
-socks://Og@105.235.201.234:32639#NG,%20Lagos
 socks://Og@138.124.114.113:1080#DE,%20Frankfurt%20am%20Main
 socks://Og@177.67.136.109:4153#BR,%20Posse
 socks://Og@47.77.193.180:1080#US,%20Los%20Angeles
 socks://Og@101.96.117.169:1080#VN,%20Hanoi
 socks://Og@103.76.190.37:31756#IN,%20Vellore
-socks://Og@23.148.244.209:10167#Unknown,%20-
-socks://Og@49.0.87.62:1080#TH,%20Bangkok
-socks://Og@45.238.57.1:3629#EC,%20Guayaquil
-socks://Og@69.61.200.104:36181#US,%20Cincinnati
-socks://Og@142.54.235.9:4145#US,%20Marietta
-socks://Og@98.188.47.150:4145#US,%20El%20Segundo
-socks://Og@91.211.115.127:1080#NL,%20Amsterdam
