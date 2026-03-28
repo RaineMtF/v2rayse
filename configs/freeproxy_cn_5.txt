@@ -1,3 +1,6 @@
+socks://Og@123.54.197.19:22824#CN,%20Zhumadian
+socks://Og@123.54.197.21:23427#CN,%20Zhumadian
+socks://Og@123.54.197.16:22125#CN,%20Zhumadian
 socks://Og@123.54.197.19:23917#CN,%20Zhumadian
 socks://Og@123.54.197.19:23978#CN,%20Zhumadian
 socks://Og@123.54.197.16:23865#CN,%20Zhumadian
@@ -89,7 +92,6 @@ socks://Og@123.54.197.21:22167#CN,%20Zhumadian
 socks://Og@123.54.197.16:21503#CN,%20Zhumadian
 socks://Og@123.54.197.19:23545#CN,%20Zhumadian
 socks://Og@123.54.197.49:22272#CN,%20Zhumadian
-socks://Og@123.54.197.16:23971#CN,%20Zhumadian
 socks://Og@123.54.197.49:21815#CN,%20Zhumadian
 socks://Og@123.54.197.19:20622#CN,%20Zhumadian
 socks://Og@123.54.197.16:22320#CN,%20Zhumadian
@@ -97,7 +99,6 @@ socks://Og@123.54.197.49:21884#CN,%20Zhumadian
 socks://Og@123.54.197.19:20694#CN,%20Zhumadian
 socks://Og@123.54.197.16:23859#CN,%20Zhumadian
 socks://Og@123.54.197.49:21160#CN,%20Zhumadian
-socks://Og@123.54.197.49:22077#CN,%20Zhumadian
 socks://Og@123.54.197.16:20781#CN,%20Zhumadian
 socks://Og@123.54.197.21:22257#CN,%20Zhumadian
 socks://Og@123.54.197.21:22962#CN,%20Zhumadian
@@ -105,7 +106,6 @@ socks://Og@123.54.197.19:22842#CN,%20Zhumadian
 socks://Og@123.54.197.21:23412#CN,%20Zhumadian
 socks://Og@123.54.197.16:20044#CN,%20Zhumadian
 socks://Og@123.54.197.19:20104#CN,%20Zhumadian
-socks://Og@123.54.197.21:23798#CN,%20Zhumadian
 socks://Og@123.54.197.21:22433#CN,%20Zhumadian
 socks://Og@123.54.197.51:23154#CN,%20Zhumadian
 socks://Og@123.54.197.16:23877#CN,%20Zhumadian
@@ -283,7 +283,6 @@ socks://Og@123.54.197.19:21482#CN,%20Zhumadian
 socks://Og@123.54.197.19:23105#CN,%20Zhumadian
 socks://Og@123.54.197.16:21457#CN,%20Zhumadian
 socks://Og@123.54.197.19:23616#CN,%20Zhumadian
-socks://Og@123.54.197.21:23430#CN,%20Zhumadian
 socks://Og@123.54.197.21:20023#CN,%20Zhumadian
 socks://Og@123.54.197.19:22076#CN,%20Zhumadian
 socks://Og@123.54.197.21:20121#CN,%20Zhumadian
@@ -451,7 +450,6 @@ socks://Og@123.54.197.19:22717#CN,%20Zhumadian
 socks://Og@123.54.197.19:23511#CN,%20Zhumadian
 socks://Og@123.54.197.19:22321#CN,%20Zhumadian
 socks://Og@123.54.197.20:23626#CN,%20Zhumadian
-socks://Og@123.54.197.52:21522#CN,%20Zhumadian
 socks://Og@123.54.197.21:22054#CN,%20Zhumadian
 socks://Og@123.54.197.19:23297#CN,%20Zhumadian
 socks://Og@123.54.197.49:22737#CN,%20Zhumadian
@@ -461,7 +459,6 @@ socks://Og@123.54.197.19:22646#CN,%20Zhumadian
 socks://Og@123.54.197.21:21467#CN,%20Zhumadian
 socks://Og@123.54.197.21:20276#CN,%20Zhumadian
 socks://Og@123.54.197.16:20772#CN,%20Zhumadian
-socks://Og@123.54.197.21:23636#CN,%20Zhumadian
 socks://Og@123.54.197.21:20718#CN,%20Zhumadian
 socks://Og@123.54.197.16:21697#CN,%20Zhumadian
 socks://Og@123.54.197.16:20799#CN,%20Zhumadian
@@ -469,16 +466,3 @@ socks://Og@123.54.197.49:20384#CN,%20Zhumadian
 socks://Og@123.54.197.19:21036#CN,%20Zhumadian
 socks://Og@123.54.197.16:21076#CN,%20Zhumadian
 socks://Og@123.54.197.49:22440#CN,%20Zhumadian
-socks://Og@123.54.197.21:22460#CN,%20Zhumadian
-socks://Og@123.54.197.21:23275#CN,%20Zhumadian
-socks://Og@123.54.197.49:22250#CN,%20Zhumadian
-socks://Og@123.54.197.49:21842#CN,%20Zhumadian
-socks://Og@123.54.197.21:20130#CN,%20Zhumadian
-socks://Og@123.54.197.19:23877#CN,%20Zhumadian
-socks://Og@123.54.197.19:23440#CN,%20Zhumadian
-socks://Og@123.54.197.16:23984#CN,%20Zhumadian
-socks://Og@123.54.197.19:23000#CN,%20Zhumadian
-socks://Og@123.54.197.19:20692#CN,%20Zhumadian
-socks://Og@123.54.197.16:21481#CN,%20Zhumadian
-socks://Og@123.54.197.19:20352#CN,%20Zhumadian
-socks://Og@123.54.197.19:23398#CN,%20Zhumadian
