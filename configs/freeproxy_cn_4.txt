@@ -1,8 +1,9 @@
-socks://Og@221.226.188.218:10800#CN,%20Nanjing
 socks://Og@27.223.85.74:48293#CN,%20Qingdao
+socks://Og@60.217.64.237:35292#CN,%20Jinan
+socks://Og@106.13.46.252:33302#CN,%20Beijing
+socks://Og@221.226.188.218:10800#CN,%20Nanjing
 socks://Og@103.40.14.27:7890#CN,%20Suqian
 socks://Og@58.218.169.186:10800#CN,%20Nanjing
-socks://Og@106.13.46.252:33302#CN,%20Beijing
 socks://Og@122.96.62.178:1080#CN,%20Nanjing
 socks://Og@39.175.80.225:1080#CN,%20Zhoushan
 socks://Og@125.70.227.214:10800#CN,%20Chengdu
