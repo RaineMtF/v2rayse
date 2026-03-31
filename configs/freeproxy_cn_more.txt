@@ -1,3 +1,7 @@
+socks://Og@59.46.216.131:30001#CN,%20Dalian
+socks://Og@123.54.197.49:20253#CN,%20Zhumadian
+socks://Og@123.54.197.51:20715#CN,%20Zhumadian
+socks://Og@123.54.197.49:22058#CN,%20Zhumadian
 socks://Og@123.54.197.49:21938#CN,%20Zhumadian
 socks://Og@123.54.197.49:23011#CN,%20Zhumadian
 socks://Og@123.54.197.51:20865#CN,%20Zhumadian
@@ -16,9 +20,7 @@ socks://Og@123.54.197.51:21288#CN,%20Zhumadian
 socks://Og@123.54.197.51:22171#CN,%20Zhumadian
 socks://Og@123.54.197.51:20260#CN,%20Zhumadian
 socks://Og@123.54.197.51:20088#CN,%20Zhumadian
-socks://Og@59.46.216.131:30001#CN,%20Dalian
 socks://Og@123.54.197.49:20954#CN,%20Zhumadian
-socks://Og@123.54.197.49:20253#CN,%20Zhumadian
 socks://Og@123.54.197.49:20509#CN,%20Zhumadian
 socks://Og@123.54.197.49:21132#CN,%20Zhumadian
 socks://Og@123.54.197.49:20782#CN,%20Zhumadian
@@ -27,7 +29,6 @@ socks://Og@123.54.197.49:21271#CN,%20Zhumadian
 socks://Og@123.54.197.49:22281#CN,%20Zhumadian
 socks://Og@123.54.197.49:22080#CN,%20Zhumadian
 socks://Og@123.54.197.49:21426#CN,%20Zhumadian
-socks://Og@123.54.197.49:20520#CN,%20Zhumadian
 socks://Og@123.54.197.49:20918#CN,%20Zhumadian
 socks://Og@123.54.197.49:21505#CN,%20Zhumadian
 socks://Og@103.40.14.27:7890#CN,%20Suqian
@@ -836,7 +837,6 @@ socks://Og@123.54.197.19:23688#CN,%20Zhumadian
 socks://Og@123.54.197.16:20330#CN,%20Zhumadian
 socks://Og@123.54.197.19:21296#CN,%20Zhumadian
 socks://Og@123.54.197.16:21107#CN,%20Zhumadian
-socks://Og@123.54.197.51:23187#CN,%20Zhumadian
 socks://Og@123.54.197.16:22385#CN,%20Zhumadian
 socks://Og@123.54.197.49:22030#CN,%20Zhumadian
 socks://Og@123.54.197.51:22147#CN,%20Zhumadian
@@ -908,13 +908,3 @@ socks://Og@123.54.197.49:23595#CN,%20Zhumadian
 socks://Og@123.54.197.51:22895#CN,%20Zhumadian
 socks://Og@123.54.197.19:22484#CN,%20Zhumadian
 socks://Og@123.54.197.16:23181#CN,%20Zhumadian
-socks://Og@123.54.197.16:23369#CN,%20Zhumadian
-socks://Og@123.54.197.51:22455#CN,%20Zhumadian
-socks://Og@123.54.197.21:22427#CN,%20Zhumadian
-socks://Og@123.54.197.49:21906#CN,%20Zhumadian
-socks://Og@123.54.197.16:20643#CN,%20Zhumadian
-socks://Og@123.54.197.20:23740#CN,%20Zhumadian
-socks://Og@123.54.197.51:23921#CN,%20Zhumadian
-socks://Og@123.54.197.20:21387#CN,%20Zhumadian
-socks://Og@123.54.197.19:20310#CN,%20Zhumadian
-socks://Og@123.54.197.49:22784#CN,%20Zhumadian
