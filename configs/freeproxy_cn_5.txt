@@ -80,4 +80,3 @@ socks://Og@123.54.197.49:23372#CN,%20Zhumadian
 socks://Og@123.54.197.49:20754#CN,%20Zhumadian
 socks://Og@123.54.197.51:21154#CN,%20Zhumadian
 socks://Og@117.93.176.37:8989#CN,%20Yancheng
-socks://Og@123.54.197.49:22474#CN,%20Zhumadian

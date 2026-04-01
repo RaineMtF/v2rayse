@@ -1,6 +1,6 @@
+socks://Og@210.22.100.242:1080#CN,%20Shanghai
 socks://Og@61.191.119.134:10800#CN,%20Huaibei
 socks://Og@103.40.14.27:7890#CN,%20Suqian
-socks://Og@210.22.100.242:1080#CN,%20Shanghai
 socks://Og@218.26.101.226:53813#CN,%20Taiyuan
 socks://Og@220.169.119.8:1080#CN,%20Huaihua
 socks://Og@218.83.201.226:10800#CN,%20Shanghai
@@ -22,4 +22,3 @@ socks://Og@122.96.62.178:1080#CN,%20Nanjing
 socks://Og@171.221.176.137:10800#CN,%20Chengdu
 socks://Og@218.91.230.253:1080#CN,%20Nantong
 socks://Og@117.93.176.37:8989#CN,%20Yancheng
-socks://Og@221.216.205.22:4145#CN,%20Beijing
