@@ -1,3 +1,4 @@
+socks://Og@61.191.119.134:10800#CN,%20Huaibei
 socks://Og@103.40.14.27:7890#CN,%20Suqian
 socks://Og@210.22.100.242:1080#CN,%20Shanghai
 socks://Og@218.26.101.226:53813#CN,%20Taiyuan
