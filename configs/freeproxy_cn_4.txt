@@ -1,3 +1,4 @@
+socks://Og@39.175.80.225:1080#CN,%20Zhoushan
 socks://Og@27.223.85.74:48293#CN,%20Qingdao
 socks://Og@103.40.14.27:7890#CN,%20Suqian
 socks://Og@221.216.205.22:4145#CN,%20Beijing
