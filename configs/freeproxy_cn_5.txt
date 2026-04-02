@@ -1,3 +1,4 @@
+socks://Og@101.43.127.100:8877#CN,%20Shanghai
 socks://Og@101.34.21.55:90#CN,%20Shanghai
 socks://Og@103.40.14.27:7890#CN,%20Suqian
 socks://Og@221.227.68.161:8989#CN,%20Wuxi
