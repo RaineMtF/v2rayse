@@ -1,3 +1,5 @@
+socks://Og@218.70.229.168:1080#CN,%20Chongqing
+socks://Og@123.54.197.49:20623#CN,%20Zhumadian
 socks://Og@123.54.197.49:23106#CN,%20Zhumadian
 socks://Og@119.91.46.111:1080#CN,%20Guangzhou
 socks://Og@123.54.197.49:22302#CN,%20Zhumadian
@@ -76,7 +78,6 @@ socks://Og@123.54.197.49:20827#CN,%20Zhumadian
 socks://Og@123.54.197.49:21015#CN,%20Zhumadian
 socks://Og@123.54.197.49:21422#CN,%20Zhumadian
 socks://Og@123.54.197.49:21929#CN,%20Zhumadian
-socks://Og@123.54.197.49:23889#CN,%20Zhumadian
 socks://Og@123.54.197.49:20811#CN,%20Zhumadian
 socks://Og@123.54.197.49:21078#CN,%20Zhumadian
 socks://Og@82.156.64.75:60010#CN,%20Beijing
@@ -121,4 +122,3 @@ socks://Og@123.54.197.49:23842#CN,%20Zhumadian
 socks://Og@123.54.197.49:23663#CN,%20Zhumadian
 socks://Og@123.54.197.49:20991#CN,%20Zhumadian
 socks://Og@123.54.197.49:22911#CN,%20Zhumadian
-socks://Og@123.54.197.49:20920#CN,%20Zhumadian
