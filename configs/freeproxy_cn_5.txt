@@ -21,7 +21,6 @@ socks://Og@123.54.197.49:20683#CN,%20Zhumadian
 socks://Og@123.54.197.49:21426#CN,%20Zhumadian
 socks://Og@123.54.197.49:23920#CN,%20Zhumadian
 socks://Og@123.54.197.49:23393#CN,%20Zhumadian
-socks://Og@124.220.20.17:13019#CN,%20Beijing
 socks://Og@123.54.197.49:20690#CN,%20Zhumadian
 socks://Og@123.54.197.49:23628#CN,%20Zhumadian
 socks://Og@123.54.197.49:21772#CN,%20Zhumadian
