@@ -1,3 +1,4 @@
+socks://Og@221.227.68.161:8989#CN,%20Wuxi
 socks://Og@112.5.33.179:999#CN,%20Quanzhou
 socks://Og@218.70.229.168:1080#CN,%20Chongqing
 socks://Og@119.91.46.111:1080#CN,%20Guangzhou
@@ -21,7 +22,6 @@ socks://Og@123.54.197.49:21426#CN,%20Zhumadian
 socks://Og@123.54.197.49:23920#CN,%20Zhumadian
 socks://Og@123.54.197.49:23393#CN,%20Zhumadian
 socks://Og@124.220.20.17:13019#CN,%20Beijing
-socks://Og@101.43.127.100:8877#CN,%20Shanghai
 socks://Og@123.54.197.49:20690#CN,%20Zhumadian
 socks://Og@123.54.197.49:23628#CN,%20Zhumadian
 socks://Og@123.54.197.49:21772#CN,%20Zhumadian
