@@ -1,2 +1,2 @@
-socks://Og@124.220.20.17:13019#CN,%20Beijing
 socks://Og@101.43.127.100:8877#CN,%20Shanghai
+socks://Og@124.220.20.17:13019#CN,%20Beijing
