@@ -1,7 +1,6 @@
+socks://Og@221.202.27.194:10808#CN,%20Dandong
 socks://Og@101.43.127.100:8877#CN,%20Shanghai
 socks://Og@124.220.20.17:13019#CN,%20Beijing
-socks://Og@59.46.216.131:30001#CN,%20Dalian
 socks://Og@110.42.37.202:20005#CN,%20Ningbo
-socks://Og@221.202.27.194:10808#CN,%20Dandong
 socks://Og@106.13.46.252:33302#CN,%20Beijing
 socks://Og@106.117.208.101:7890#CN,%20Baoding
