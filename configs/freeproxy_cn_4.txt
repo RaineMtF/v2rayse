@@ -1,3 +1,4 @@
+socks://Og@60.217.64.237:35292#CN,%20Jinan
 socks://Og@61.191.119.134:10800#CN,%20Huaibei
 socks://Og@220.167.89.10:10800#CN,%20Chengdu
 socks://Og@110.42.37.202:20005#CN,%20Ningbo
