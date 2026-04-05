@@ -1,2 +1,3 @@
+socks://Og@59.46.216.131:30001#CN,%20Dalian
 socks://Og@106.117.208.101:7890#CN,%20Baoding
 socks://Og@101.34.21.55:90#CN,%20Shanghai
