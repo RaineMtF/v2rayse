@@ -1,3 +1,4 @@
-socks://Og@124.16.102.119:26001#CN,%20Beijing
 socks://Og@42.248.121.138:1024#CN,%20Yingkou
 socks://Og@101.43.127.100:8877#CN,%20Shanghai
+socks://Og@61.171.78.203:1080#CN,%20Shanghai
+socks://Og@124.16.102.119:26001#CN,%20Beijing
