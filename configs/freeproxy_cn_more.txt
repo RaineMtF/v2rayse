@@ -1,3 +1,4 @@
+socks://Og@112.5.33.179:999#CN,%20Quanzhou
 socks://Og@124.16.102.119:26001#CN,%20Beijing
 socks://Og@221.202.27.194:10806#CN,%20Dandong
 socks://Og@221.202.27.194:10807#CN,%20Dandong
