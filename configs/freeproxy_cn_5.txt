@@ -1,2 +1,1 @@
-socks://Og@59.46.216.131:30001#CN,%20Dalian
 socks://Og@101.43.127.100:8877#CN,%20Shanghai
