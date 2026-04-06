@@ -1,1 +1,1 @@
-socks://Og@101.43.127.100:8877#CN,%20Shanghai
+socks://Og@42.248.121.138:1024#CN,%20Yingkou
