@@ -1,2 +1,3 @@
+socks://Og@202.141.161.51:7891#CN,%20Hefei
 socks://Og@101.43.127.100:8877#CN,%20Shanghai
 socks://Og@61.171.78.203:1080#CN,%20Shanghai
