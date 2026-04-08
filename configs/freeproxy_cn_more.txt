@@ -1,5 +1,4 @@
 socks://Og@221.202.27.194:10807#CN,%20Dandong
-socks://Og@101.43.127.100:8877#CN,%20Shanghai
 socks://Og@117.93.176.37:8989#CN,%20Yancheng
 socks://Og@124.223.171.192:8066#CN,%20Shanghai
 socks://Og@203.25.208.163:1145#CN,%20Guangzhou
