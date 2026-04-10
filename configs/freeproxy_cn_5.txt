@@ -1,7 +1,5 @@
-socks://Og@101.43.127.100:8877#CN,%20Shanghai
 socks://Og@134.175.238.113:1080#CN,%20Guangzhou
 socks://Og@59.46.216.131:30001#CN,%20Dalian
+socks://Og@101.43.127.100:8877#CN,%20Shanghai
+socks://Og@42.193.140.221:1080#CN,%20Guangzhou
 socks://Og@122.228.244.206:1080#CN,%20Wenzhou
-socks://Og@124.221.164.32:7890#CN,%20Beijing
-socks://Og@222.184.87.196:8989#CN,%20Huai%27an
-socks://Og@221.225.48.120:8989#CN,%20Suzhou
