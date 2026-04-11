@@ -1,5 +1,5 @@
-socks://Og@203.25.208.163:1111#CN,%20Guangzhou
 socks://Og@222.128.12.3:8881#CN,%20Beijing
 socks://Og@101.43.127.100:8877#CN,%20Shanghai
+socks://Og@203.25.208.163:1111#CN,%20Guangzhou
 socks://Og@203.25.208.163:1145#CN,%20Guangzhou
 socks://Og@117.72.214.121:7890#CN,%20Beijing
