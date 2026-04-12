@@ -20,7 +20,6 @@ socks://Og@58.218.169.186:10800#CN,%20Nanjing
 socks://Og@47.99.112.148:8090#CN,%20Hangzhou
 socks://Og@61.191.119.134:10800#CN,%20Huaibei
 socks://Og@112.5.33.179:999#CN,%20Quanzhou
-socks://Og@59.46.216.131:30001#CN,%20Dalian
 socks://Og@203.25.208.163:1111#CN,%20Guangzhou
 socks://Og@203.25.208.163:1100#CN,%20Guangzhou
 socks://Og@180.172.62.48:1080#CN,%20Shanghai
