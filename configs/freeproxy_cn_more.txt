@@ -1,3 +1,5 @@
+socks://Og@221.202.27.194:10807#CN,%20Dandong
+socks://Og@59.46.216.131:30001#CN,%20Dalian
 socks://Og@134.175.238.113:1080#CN,%20Guangzhou
 socks://Og@112.5.33.179:999#CN,%20Quanzhou
 socks://Og@203.25.208.163:1145#CN,%20Guangzhou
