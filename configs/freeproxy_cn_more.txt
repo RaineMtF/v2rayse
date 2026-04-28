@@ -1,3 +1,4 @@
+socks://Og@203.25.208.163:1145#CN,%20Guangzhou
 socks://Og@221.225.48.73:8989#CN,%20Suzhou
 socks://Og@203.25.208.163:1515#CN,%20Guangzhou
 socks://Og@221.225.50.60:8989#CN,%20Suzhou
@@ -58,7 +59,6 @@ socks://Og@58.19.55.88:15088#CN,%20Wuhan
 socks://Og@58.19.55.88:15019#CN,%20Wuhan
 socks://Og@58.19.55.88:15061#CN,%20Wuhan
 socks://Og@58.19.55.88:15017#CN,%20Wuhan
-socks://Og@203.25.208.163:1145#CN,%20Guangzhou
 socks://Og@58.19.55.88:15092#CN,%20Wuhan
 socks://Og@58.19.55.88:15050#CN,%20Wuhan
 socks://Og@58.19.55.88:15027#CN,%20Wuhan
