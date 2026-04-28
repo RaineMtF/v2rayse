@@ -1,3 +1,4 @@
+socks://Og@221.225.48.100:8989#CN,%20Suzhou
 socks://Og@221.225.48.92:8989#CN,%20Suzhou
 socks://Og@58.19.55.88:15080#CN,%20Wuhan
 socks://Og@58.19.55.88:15055#CN,%20Wuhan
