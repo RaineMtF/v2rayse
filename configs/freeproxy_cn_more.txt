@@ -34,7 +34,6 @@ socks://Og@58.19.55.88:15082#CN,%20Wuhan
 socks://Og@58.19.55.4:15001#CN,%20Wuhan
 socks://Og@58.19.55.88:15096#CN,%20Wuhan
 socks://Og@58.19.55.88:15041#CN,%20Wuhan
-socks://Og@203.25.208.163:1100#CN,%20Guangzhou
 socks://Og@58.19.55.88:15098#CN,%20Wuhan
 socks://Og@58.19.55.88:15011#CN,%20Wuhan
 socks://Og@58.19.55.88:15057#CN,%20Wuhan
