@@ -33,5 +33,3 @@ socks://Og@218.83.201.226:10800#CN,%20Shanghai
 socks://Og@112.2.21.18:51080#CN,%20Beijing
 socks://Og@221.224.140.140:51080#CN,%20Danyang
 socks://Og@123.147.190.222:20170#CN,%20Chongqing
-socks://Og@49.82.173.134:8989#CN,%20Huai%27an
-socks://Og@117.82.50.29:8989#CN,%20Suzhou
