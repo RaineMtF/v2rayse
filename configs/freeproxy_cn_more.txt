@@ -1,10 +1,9 @@
-socks://Og@117.93.210.21:8989#CN,%20Yancheng
-socks://Og@203.25.208.163:1111#CN,%20Guangzhou
 socks://Og@159.75.177.225:443#CN,%20Guangzhou
 socks://Og@203.25.208.163:1100#CN,%20Guangzhou
+socks://Og@117.93.210.21:8989#CN,%20Yancheng
+socks://Og@203.25.208.163:1111#CN,%20Guangzhou
 socks://Og@221.225.50.63:8989#CN,%20Suzhou
 socks://Og@221.225.50.2:8989#CN,%20Suzhou
 socks://Og@117.82.50.29:8989#CN,%20Suzhou
 socks://Og@221.225.50.20:8989#CN,%20Suzhou
 socks://Og@43.139.29.27:1111#CN,%20Guangzhou
-socks://Og@221.225.48.114:8989#CN,%20Suzhou
