@@ -1,2 +1,1 @@
-socks://Og@159.75.177.225:443#CN,%20Guangzhou
 socks://Og@203.25.208.163:1515#CN,%20Guangzhou
