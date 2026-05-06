@@ -1,4 +1,6 @@
-socks://Og@122.224.198.218:1080#CN,%20Hangzhou
+socks://Og@221.225.50.34:8989#CN,%20Suzhou
+socks://Og@221.225.50.50:8989#CN,%20Suzhou
+socks://Og@159.75.177.225:443#CN,%20Guangzhou
 socks://Og@203.25.208.163:1515#CN,%20Guangzhou
 socks://Og@203.25.208.163:1100#CN,%20Guangzhou
 socks://Og@112.31.254.184:1080#CN,%20Hefei
