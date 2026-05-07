@@ -6,5 +6,4 @@ socks://Og@203.25.208.163:1515#CN,%20Guangzhou
 socks://Og@221.225.48.125:8989#CN,%20Suzhou
 socks://Og@221.225.50.63:8989#CN,%20Suzhou
 socks://Og@203.25.208.163:1011#CN,%20Guangzhou
-socks://Og@203.25.208.163:1100#CN,%20Guangzhou
 socks://Og@221.225.48.75:8989#CN,%20Suzhou
