@@ -1,6 +1,5 @@
 socks://Og@203.25.208.163:1011#CN,%20Guangzhou
 socks://Og@59.46.216.131:30001#CN,%20Dalian
-socks://Og@203.25.208.163:1145#CN,%20Guangzhou
 socks://Og@123.147.190.222:20170#CN,%20Chongqing
 socks://Og@221.225.50.57:8989#CN,%20Suzhou
 socks://Og@221.225.48.106:8989#CN,%20Suzhou
