@@ -1,12 +1,13 @@
-socks://Og@221.225.50.45:8989#CN,%20Suzhou
+socks://Og@49.74.19.242:8989#CN,%20Nanjing
 socks://Og@203.25.208.163:1011#CN,%20Guangzhou
 socks://Og@59.46.216.131:30001#CN,%20Dalian
 socks://Og@203.25.208.163:1515#CN,%20Guangzhou
-socks://Og@221.225.50.7:8989#CN,%20Suzhou
+socks://Og@218.29.106.203:10808#CN,%20Zhengzhou
+socks://Og@112.5.33.179:999#CN,%20Quanzhou
 socks://Og@203.25.208.163:1145#CN,%20Guangzhou
-socks://Og@134.175.238.113:1080#CN,%20Guangzhou
+socks://Og@221.225.50.45:8989#CN,%20Suzhou
+socks://Og@221.225.50.7:8989#CN,%20Suzhou
 socks://Og@221.225.48.114:8989#CN,%20Suzhou
 socks://Og@203.25.208.163:1111#CN,%20Guangzhou
 socks://Og@221.225.48.90:8989#CN,%20Suzhou
 socks://Og@221.225.50.2:8989#CN,%20Suzhou
-socks://Og@117.82.50.31:8989#CN,%20Suzhou
