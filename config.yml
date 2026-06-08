@@ -10,7 +10,7 @@ freeproxy_list:
   - anonymity:
       speed: 5000
       file: freeproxy_anonymity.txt
-      anonymity: high
+      anonymity: 4
 
 merge_list:
   - freeproxy_all.txt:
