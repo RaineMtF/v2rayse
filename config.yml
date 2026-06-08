@@ -1,8 +1,4 @@
 freeproxy_list:
-  - CN_MORE:
-      country: CN
-      speed: 5000
-      file: freeproxy_cn.txt
   - SOCKS4:
       type: socks4
       speed: 5000
@@ -11,18 +7,13 @@ freeproxy_list:
       type: socks5
       speed: 5000
       file: freeproxy_socks5.txt
-  - HTTPS:
-      type: https
+  - anonymity:
       speed: 5000
-      file: freeproxy_https.txt
+      file: freeproxy_anonymity.txt
+      anonymity: high
 
 merge_list:
-  - freeproxy_socks.txt:
-    - freeproxy_socks4.txt
-    - freeproxy_socks5.txt
-    - freeproxy_https.txt
   - freeproxy_all.txt:
     - freeproxy_socks4.txt
     - freeproxy_socks5.txt
-    - freeproxy_https.txt
-    - freeproxy_cn.txt
+    - freeproxy_anonymity.txt
