@@ -1,0 +1,15 @@
+[project]
+name = "v2rayse"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "beautifulsoup4>=4.14.3",
+    "html5lib>=1.1",
+    "httpx[http2]>=0.28.1",
+    "lxml>=6.1.1",
+    "pyyaml>=6.0.3",
+    "requests>=2.34.2",
+    "seleniumbase>=4.49.7",
+]

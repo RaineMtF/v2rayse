@@ -1,0 +1,66 @@
+name: SubConverter Auto Update
+
+on:
+  # push:
+  #   branches:
+  #     - main
+  schedule:
+    - cron: '0 */8 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v6
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+
+      - name: Install uv dependencies
+        run: |
+          uv sync --locked --no-dev
+          # 预先下载 uc_driver 并修复权限
+          uv run python -c "from seleniumbase import Driver; print('SeleniumBase installed')"
+
+      - name: Install Chrome
+        run: |
+          sudo apt update
+          # sudo apt install -y google-chrome-stable
+          uv run seleniumbase install chromedriver
+
+      - name: Fix driver permissions
+        run: |
+          # 给所有驱动添加执行权限
+          find .venv -name "uc_driver" -o -name "chromedriver" -o -name "*driver" -type f 2>/dev/null | while read -r driver; do
+            chmod +x "$driver"
+            echo "Fixed permissions for: $driver"
+          done
+          # 同时检查全局可能的位置
+          for path in ~/.seleniumbase/drivers ~/.local/share/seleniumbase /usr/local/bin; do
+            if [ -d "$path" ]; then
+              find "$path" -name "*driver" -type f -exec chmod +x {} \; 2>/dev/null
+            fi
+          done
+
+      - name: Run Update Script
+        run: uv run scripts/main.py
+
+      - name: Commit Changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # 创建无父节点分支，实现单 commit 历史
+          git checkout --orphan temp_branch
+          git add -A
+          git commit -m "Update configs [skip ci]" || exit 0
+          git branch -M main
+
+      - name: Force Push Changes
+        run: git push --force origin main
