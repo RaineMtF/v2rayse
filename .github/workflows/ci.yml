@@ -56,11 +56,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # 创建无父节点分支，实现单 commit 历史
-          git checkout --orphan temp_branch
           git add -A
           git commit -m "Update configs [skip ci]" || exit 0
-          git branch -M main
 
-      - name: Force Push Changes
-        run: git push --force origin main
+      - name: Push Changes
+        run: git push origin main
