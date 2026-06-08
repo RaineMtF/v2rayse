@@ -51,6 +51,7 @@ jobs:
 
       - name: Run Update Script
         run: uv run scripts/main.py
+        timeout-minutes: 30
 
       - name: Commit Changes
         run: |
