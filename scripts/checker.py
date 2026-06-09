@@ -2,10 +2,9 @@
 
 from __future__ import annotations
 
-import os
 import time
 import threading
-from concurrent.futures import ThreadPoolExecutor
+import queue
 
 import requests
 
@@ -21,13 +20,13 @@ class _CheckerStats:
 
     def __init__(self) -> None:
         self._lock = threading.Lock()
-        self.submitted = 0       # 已提交给进程池的代理总数
-        self.completed = 0       # 已从进程池拿到结果的代理总数
+        self.submitted = 0       # 已提交给线程池的代理总数
+        self.completed = 0       # 已从线程池拿到结果的代理总数
         self.success = 0         # 最终可用数
         self.fail_google = 0     # 败在 google generate204
         self.fail_cloudflare = 0 # 败在 cloudflare
         self.fail_openssh = 0    # 败在 openssh
-        self.fail_exception = 0  # 进程内抛异常
+        self.fail_exception = 0  # 线程内抛异常
 
     @property
     def pending(self) -> int:
@@ -71,7 +70,7 @@ def _logger_thread(stats: _CheckerStats, interval: int, stop_event: threading.Ev
 
 
 # ---------------------------------------------------------------------------
-# 代理验证逻辑（在子进程内运行，必须保证可被 pickle）
+# 代理验证逻辑（在线程内运行）
 # ---------------------------------------------------------------------------
 
 def _check_single(proxy: Proxy) -> ValidateResult:
@@ -87,7 +86,6 @@ def _check_single(proxy: Proxy) -> ValidateResult:
     proxies = {"http": proxy_url, "https": proxy_url}
     result = ValidateResult(proxy=proxy, available=False)
     TIMEOUT_SEC = 5.0
-    print(f'[{proxy_url}] {time.time()}', flush=True)
 
     # Step 1: Google generate204
     try:
@@ -144,7 +142,6 @@ def _check_single(proxy: Proxy) -> ValidateResult:
         result.fail_step = "openssh"
         return result
 
-    print(f'[{proxy_url}] {result}', flush=True)
     return result
 
 
@@ -171,44 +168,61 @@ def run_checker(raw_queue, result_queue, max_workers: int | None = None, log_int
     )
     logger.start()
 
+    # 内部任务队列，预创建固定线程池，避免 ThreadPoolExecutor 调度开销
+    task_queue = queue.Queue(maxsize=max_workers * 4)
+    stop_event = threading.Event()
+
+    def _worker():
+        """工作线程：从 task_queue 取任务，验证后写入 result_queue"""
+        while not stop_event.is_set():
+            try:
+                proxy = task_queue.get(timeout=0.5)
+                if proxy is None:
+                    break
+            except queue.Empty:
+                continue
+
+            result = _check_single(proxy)
+
+            # 更新统计
+            if result.available:
+                stats.record_ok()
+            else:
+                if result.fail_step:
+                    stats.record_fail(result.fail_step)
+                else:
+                    stats.record_exception()
+
+            result_queue.put(result)
+
+            identity = getattr(result.proxy, "identity", "unknown")
+            status = "✅ 可用" if result.available else f"❌ 不可用 ({result.error})"
+            print(f"[Checker] {identity} -> {status}")
+
+    # 启动固定线程池
+    threads = []
+    for _ in range(max_workers):
+        t = threading.Thread(target=_worker, daemon=True)
+        t.start()
+        threads.append(t)
+
     try:
-        # 批量从 raw_queue 消费所有 Proxy
-        proxies = []
         while True:
             proxy = raw_queue.get()
             if proxy is None:
                 break
             stats.submitted += 1
-            proxies.append(proxy)
+            task_queue.put(proxy)
 
-        total = len(proxies)
-        if total == 0:
-            print("[Checker] 无代理需要验证")
-            return
+        # 发送结束信号
+        for _ in range(max_workers):
+            task_queue.put(None)
 
-        print(f"[Checker] 开始验证 {total} 个代理")
-
-        # 合适的 chunksize 减少 IPC 开销（每个 worker 一轮处理多个任务）
-        chunksize = max(1, total // (max_workers * 4)) if total >= max_workers else 1
-
-        with ThreadPoolExecutor(max_workers=max_workers) as executor:
-            # imap_unordered 实时返回结果，无需手动管理 futures dict
-            for result in executor.imap_unordered(_check_single, proxies, chunksize=chunksize):
-                result_queue.put(result)
-
-                # 更新统计
-                if result.available:
-                    stats.record_ok()
-                else:
-                    if result.fail_step:
-                        stats.record_fail(result.fail_step)
-                    else:
-                        stats.record_exception()
-
-                identity = getattr(result.proxy, "identity", "unknown")
-                status = "✅ 可用" if result.available else f"❌ 不可用 ({result.error})"
-                print(f"[Checker] {identity} -> {status}")
+        # 等待所有工作线程完成
+        for t in threads:
+            t.join()
     finally:
+        stop_event.set()
         logger_stop.set()
         logger.join(timeout=1)
 
