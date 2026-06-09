@@ -49,6 +49,7 @@ class ValidateResult:
         cloudflare_ms: Optional[float] = None,
         openssh_ok: bool = False,
         error: str = "",
+        fail_step: str = "",
     ):
         self.proxy = proxy
         self.available = available
@@ -56,6 +57,7 @@ class ValidateResult:
         self.cloudflare_ms = cloudflare_ms
         self.openssh_ok = openssh_ok
         self.error = error
+        self.fail_step = fail_step  # google / cloudflare / openssh / exception
 
     def __repr__(self) -> str:
         return (
