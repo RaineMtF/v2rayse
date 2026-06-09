@@ -75,9 +75,9 @@ def _logger_thread(stats: _CheckerStats, interval: int, stop_event: threading.Ev
 
 def _check_single(proxy: Proxy) -> ValidateResult:
     """
-    验证单个代理的可用性（含 5 次重试）。
+    验证单个代理的可用性（含 3 次重试）。
 
-    验证流程（每步超时 5 秒）：
+    验证流程（每步超时 2.5 秒）：
     1. Google generate204 — 连通性
     2. Cloudflare          — 稳定性
     3. OpenSSH.org (TLS)  — 高安全要求网站访问能力
@@ -167,9 +167,9 @@ def _check_single(proxy: Proxy) -> ValidateResult:
 # 供 multiprocessing.Process 进程内直接调用的入口
 # ---------------------------------------------------------------------------
 
-def run_checker(raw_queue, result_queue, max_workers: int = 16, log_interval: int = 30):
+def run_checker(raw_queue, result_queue, max_workers: int = 8, log_interval: int = 5):
     """
-    从 raw_queue 消费 Proxy 对象，使用 16 进程池并发验证，
+    从 raw_queue 消费 Proxy 对象，使用 8 进程池并发验证，
     将 ValidateResult 写入 result_queue，完成后发送哨兵 None。
     """
     print(f"[Checker] 启动验证服务，进程池大小: {max_workers}")
