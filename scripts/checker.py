@@ -87,13 +87,13 @@ def _check_single(proxy: Proxy) -> ValidateResult:
     result = ValidateResult(proxy=proxy, available=False)
 
     # Step 1: Google generate204
-    for attempt in range(5):
+    for attempt in range(2):
         try:
             start = time.perf_counter()
             resp = requests.get(
                 "http://clients3.google.com/generate_204",
                 proxies={"http": proxy_url, "https": proxy_url},
-                timeout=5,
+                timeout=2.5,
             )
             google_time = round((time.perf_counter() - start) * 1000, 2)
             if 200 <= resp.status_code <= 399 or resp.status_code == 204:
@@ -112,13 +112,13 @@ def _check_single(proxy: Proxy) -> ValidateResult:
                 return result
 
     # Step 2: Cloudflare
-    for attempt in range(5):
+    for attempt in range(2):
         try:
             start = time.perf_counter()
             resp = requests.get(
                 "http://cp.cloudflare.com",
                 proxies={"http": proxy_url, "https": proxy_url},
-                timeout=5,
+                timeout=2.5,
             )
             cf_time = round((time.perf_counter() - start) * 1000, 2)
             if 200 <= resp.status_code <= 399 or resp.status_code == 204:
@@ -137,12 +137,12 @@ def _check_single(proxy: Proxy) -> ValidateResult:
                 return result
 
     # Step 3: OpenSSH.org (高 TLS 要求)
-    for attempt in range(5):
+    for attempt in range(2):
         try:
             resp = requests.get(
                 "https://www.openssh.org/",
                 proxies={"http": proxy_url, "https": proxy_url},
-                timeout=5,
+                timeout=2.5,
             )
             if 200 <= resp.status_code <= 399:
                 result.openssh_ok = True
