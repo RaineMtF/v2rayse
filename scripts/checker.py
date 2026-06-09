@@ -23,7 +23,6 @@ class _CheckerStats:
         self.submitted = 0       # 已提交给线程池的代理总数
         self.completed = 0       # 已从线程池拿到结果的代理总数
         self.success = 0         # 最终可用数
-        self.fail_google = 0     # 败在 google generate204
         self.fail_cloudflare = 0 # 败在 cloudflare
         self.fail_openssh = 0    # 败在 openssh
         self.fail_exception = 0  # 线程内抛异常
@@ -57,7 +56,7 @@ class _CheckerStats:
                 f"[CheckerStats] "
                 f"待完成={self.pending}, 已完成={self.completed}, 成功={self.success}, "
                 f"失败={failed} "
-                f"(google={self.fail_google}, cloudflare={self.fail_cloudflare}, "
+                f"(cloudflare={self.fail_cloudflare}, "
                 f"openssh={self.fail_openssh}, exception={self.fail_exception})"
             )
 
@@ -78,34 +77,15 @@ def _check_single(proxy: Proxy) -> ValidateResult:
     验证单个代理的可用性。
 
     验证流程（不进行重试，每步严格超时 5.0 秒）：
-    1. Google generate204 — 连通性 (严格 204 校验)
-    2. Cloudflare         — 稳定性 (严格 204 校验)
-    3. OpenSSH.org (TLS)  — 高安全要求网站访问能力 (严格 200 校验，非 200 降级为警告)
+    1. Cloudflare         — 稳定性 (严格 204 校验)
+    2. OpenSSH.org (TLS)  — 高安全要求网站访问能力 (严格 200-299 校验)
     """
     proxy_url = proxy.url
     proxies = {"http": proxy_url, "https": proxy_url}
     result = ValidateResult(proxy=proxy, available=False)
     TIMEOUT_SEC = 5.0
 
-    # Step 1: Google generate204
-    try:
-        start = time.perf_counter()
-        resp = requests.get(
-            "https://clients3.google.com/generate_204",
-            proxies=proxies,
-            timeout=TIMEOUT_SEC,
-        )
-        result.google_204_ms = round((time.perf_counter() - start) * 1000, 2)
-        if resp.status_code != 204:
-            result.error = f"google_204 status {resp.status_code} (Expected 204)"
-            result.fail_step = "google"
-            return result
-    except Exception as exc:
-        result.error = repr(exc)
-        result.fail_step = "google"
-        return result
-
-    # Step 2: Cloudflare
+    # Step 1: Cloudflare
     try:
         start = time.perf_counter()
         resp = requests.get(
@@ -123,26 +103,24 @@ def _check_single(proxy: Proxy) -> ValidateResult:
         result.fail_step = "cloudflare"
         return result
 
-    # Step 3: OpenSSH.org (高 TLS 要求)
+    # Step 2: OpenSSH.org (高 TLS 要求)
     try:
         resp = requests.get(
             "https://www.openssh.org/",
             proxies=proxies,
             timeout=TIMEOUT_SEC,
         )
-        if resp.status_code == 200:
-            result.openssh_ok = True
+        if 200 <= resp.status_code < 300:
             result.available = True
         else:
-            result.error = f"openssh status {resp.status_code} (Expected 200)"
-            result.openssh_ok = False
-            result.available = True
+            result.error = f"openssh status {resp.status_code} (Expected 200-299)"
+            result.fail_step = "openssh"
+            return result
     except Exception as exc:
         result.error = repr(exc)
         result.fail_step = "openssh"
         return result
 
-    print(f'[{proxy_url}] {result}', flush=True)
     return result
 
 
