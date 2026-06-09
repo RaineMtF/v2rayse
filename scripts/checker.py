@@ -6,7 +6,7 @@ import time
 import threading
 import queue
 
-import requests
+import httpx
 
 from models import Proxy, ValidateResult
 
@@ -81,44 +81,50 @@ def _check_single(proxy: Proxy) -> ValidateResult:
     2. OpenSSH.org (TLS)  — 高安全要求网站访问能力 (严格 200-299 校验)
     """
     proxy_url = proxy.url
-    proxies = {"http": proxy_url, "https": proxy_url}
+    
+    # 将 socks5:// 替换为 socks5h://，让代理服务器负责 DNS 解析
+    if proxy_url.startswith("socks5://"):
+        proxy_url = "socks5h://" + proxy_url[len("socks5://"):]
+    
+    proxies = {"all://": proxy_url}
     result = ValidateResult(proxy=proxy, available=False)
     TIMEOUT_SEC = 5.0
 
-    # Step 1: Cloudflare
     try:
-        start = time.perf_counter()
-        resp = requests.get(
-            "https://cp.cloudflare.com",
+        with httpx.Client(
             proxies=proxies,
-            timeout=TIMEOUT_SEC,
-        )
-        result.cloudflare_ms = round((time.perf_counter() - start) * 1000, 2)
-        if resp.status_code != 204:
-            result.error = f"cloudflare status {resp.status_code} (Expected 204)"
-            result.fail_step = "cloudflare"
-            return result
+            timeout=httpx.Timeout(None, connect=TIMEOUT_SEC, read=TIMEOUT_SEC),
+        ) as client:
+            # Step 1: Cloudflare
+            try:
+                start = time.perf_counter()
+                resp = client.get("https://cp.cloudflare.com")
+                result.cloudflare_ms = round((time.perf_counter() - start) * 1000, 2)
+                if resp.status_code != 204:
+                    result.error = f"cloudflare status {resp.status_code} (Expected 204)"
+                    result.fail_step = "cloudflare"
+                    return result
+            except Exception as exc:
+                result.error = repr(exc)
+                result.fail_step = "cloudflare"
+                return result
+
+            # Step 2: OpenSSH.org (高 TLS 要求)
+            try:
+                resp = client.get("https://www.openssh.org/")
+                if 200 <= resp.status_code < 300:
+                    result.available = True
+                else:
+                    result.error = f"openssh status {resp.status_code} (Expected 200-299)"
+                    result.fail_step = "openssh"
+                    return result
+            except Exception as exc:
+                result.error = repr(exc)
+                result.fail_step = "openssh"
+                return result
     except Exception as exc:
         result.error = repr(exc)
         result.fail_step = "cloudflare"
-        return result
-
-    # Step 2: OpenSSH.org (高 TLS 要求)
-    try:
-        resp = requests.get(
-            "https://www.openssh.org/",
-            proxies=proxies,
-            timeout=TIMEOUT_SEC,
-        )
-        if 200 <= resp.status_code < 300:
-            result.available = True
-        else:
-            result.error = f"openssh status {resp.status_code} (Expected 200-299)"
-            result.fail_step = "openssh"
-            return result
-    except Exception as exc:
-        result.error = repr(exc)
-        result.fail_step = "openssh"
         return result
 
     return result
@@ -134,7 +140,7 @@ def run_checker(raw_queue, result_queue, max_workers: int | None = None, log_int
     将 ValidateResult 写入 result_queue，完成后发送哨兵 None。
     """
     if max_workers is None:
-        max_workers = 16
+        max_workers = 128
 
     print(f"[Checker] 启动验证服务，线程池大小: {max_workers}")
 
