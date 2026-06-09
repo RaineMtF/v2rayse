@@ -154,7 +154,7 @@ def _check_single(proxy: Proxy) -> ValidateResult:
         result.fail_step = "openssh"
         return result
 
-    _log(f'[{proxy_url}] {result}') 
+    print(f'[{proxy_url}] {result}', flush=True) 
     return result
 
 
