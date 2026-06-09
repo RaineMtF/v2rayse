@@ -167,6 +167,8 @@ def run_checker(raw_queue, result_queue, max_workers: int | None = None, log_int
             except queue.Empty:
                 continue
 
+            identity = getattr(proxy, "identity", "unknown")
+            print(f"[Checker] 🚀 {identity} -> 工作线程启动任务")
             result = _check_single(proxy)
 
             # 更新统计
@@ -197,6 +199,8 @@ def run_checker(raw_queue, result_queue, max_workers: int | None = None, log_int
             if proxy is None:
                 break
             stats.submitted += 1
+            identity = getattr(proxy, "identity", "unknown")
+            print(f"[Checker] ⏳ {identity} -> 已加入任务队列")
             task_queue.put(proxy)
 
         # 发送结束信号
