@@ -156,7 +156,7 @@ def run_checker(raw_queue, result_queue, max_workers: int | None = None, log_int
     将 ValidateResult 写入 result_queue，完成后发送哨兵 None。
     """
     if max_workers is None:
-        max_workers = max(1, os.cpu_count() if os.cpu_count() else 1)
+        max_workers = 8
 
     print(f"[Checker] 启动验证服务，进程池大小: {max_workers}")
 
