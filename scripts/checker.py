@@ -86,6 +86,7 @@ def _check_single(proxy: Proxy) -> ValidateResult:
     proxies = {"http": proxy_url, "https": proxy_url}
     result = ValidateResult(proxy=proxy, available=False)
     TIMEOUT_SEC = 5.0
+    print(f'[{proxy_url}] {time.time()}', flush=True)
 
     # Step 1: Google generate204
     try:
@@ -142,6 +143,7 @@ def _check_single(proxy: Proxy) -> ValidateResult:
         result.fail_step = "openssh"
         return result
 
+    print(f'[{proxy_url}] {result}', flush=True)
     return result
 
 
