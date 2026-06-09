@@ -88,7 +88,7 @@ def check_blocked(html_content: str, page_title: str = "") -> bool:
         是否被阻断
     """
     if not html_content:
-        return False
+        return True  # 空内容视为可能被阻断，需要重试
 
     # 标题检测（传入 page_title 保留原始大小写）
     if "Cloudflare" in page_title or "Just a moment" in page_title:

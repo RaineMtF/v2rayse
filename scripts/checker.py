@@ -140,21 +140,21 @@ def _check_single(proxy: Proxy) -> ValidateResult:
             proxies=proxies,
             timeout=TIMEOUT_SEC,
         )
-        
+
         if resp.status_code == 200:
             result.openssh_ok = True
             result.available = True
         else:
-            # 保持你的业务逻辑：非 200 仅当警告，代理仍标记可用
+            # 非 200 仅当警告记录，代理仍标记为可用
             result.error = f"openssh status {resp.status_code} (Expected 200)"
-            result.openssh_ok = False 
-            result.available = True  
+            result.openssh_ok = False
+            result.available = True
     except Exception as exc:
         result.error = repr(exc)
         result.fail_step = "openssh"
         return result
 
-    print(f'[{proxy_url}] {result}', flush=True) 
+    print(f'[{proxy_url}] {result}', flush=True)
     return result
 
 
@@ -162,9 +162,9 @@ def _check_single(proxy: Proxy) -> ValidateResult:
 # 供 multiprocessing.Process 进程内直接调用的入口
 # ---------------------------------------------------------------------------
 
-def run_checker(raw_queue, result_queue, max_workers: int = 64, log_interval: int = 5):
+def run_checker(raw_queue, result_queue, max_workers: int = 16, log_interval: int = 5):
     """
-    从 raw_queue 消费 Proxy 对象，使用 64 进程池并发验证，
+    从 raw_queue 消费 Proxy 对象，使用 16 进程池并发验证，
     将 ValidateResult 写入 result_queue，完成后发送哨兵 None。
     """
     print(f"[Checker] 启动验证服务，进程池大小: {max_workers}")
