@@ -177,7 +177,7 @@ def run_fetcher(freeproxy_list, raw_queue):
                     if proxy.identity not in seen:
                         seen.add(proxy.identity)
                         raw_queue.put(proxy)
-                        print(f"[Fetcher] 新代理: {proxy.identity}")
+                        # print(f"[Fetcher] 新代理: {proxy.identity}")
                     else:
                         print(f"[Fetcher] 重复跳过: {proxy.identity}")
                 empty_streak = 0
