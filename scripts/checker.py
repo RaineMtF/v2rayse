@@ -1,11 +1,11 @@
-"""第二阶段：多进程并发验证代理可用性"""
+"""第二阶段：多线程并发验证代理可用性"""
 
 from __future__ import annotations
 
 import os
 import time
 import threading
-from concurrent.futures import ProcessPoolExecutor
+from concurrent.futures import ThreadPoolExecutor
 
 import requests
 
@@ -147,18 +147,18 @@ def _check_single(proxy: Proxy) -> ValidateResult:
 
 
 # ---------------------------------------------------------------------------
-# 供 multiprocessing.Process 直接调用的入口
+# 供多线程直接调用的入口
 # ---------------------------------------------------------------------------
 
 def run_checker(raw_queue, result_queue, max_workers: int | None = None, log_interval: int = 5):
     """
-    从 raw_queue 消费 Proxy 对象，使用多进程并发验证，
+    从 raw_queue 消费 Proxy 对象，使用多线程并发验证，
     将 ValidateResult 写入 result_queue，完成后发送哨兵 None。
     """
     if max_workers is None:
-        max_workers = 8
+        max_workers = 128
 
-    print(f"[Checker] 启动验证服务，进程池大小: {max_workers}")
+    print(f"[Checker] 启动验证服务，线程池大小: {max_workers}")
 
     stats = _CheckerStats()
     logger_stop = threading.Event()
@@ -189,7 +189,7 @@ def run_checker(raw_queue, result_queue, max_workers: int | None = None, log_int
         # 合适的 chunksize 减少 IPC 开销（每个 worker 一轮处理多个任务）
         chunksize = max(1, total // (max_workers * 4)) if total >= max_workers else 1
 
-        with ProcessPoolExecutor(max_workers=max_workers) as executor:
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
             # imap_unordered 实时返回结果，无需手动管理 futures dict
             for result in executor.imap_unordered(_check_single, proxies, chunksize=chunksize):
                 result_queue.put(result)
